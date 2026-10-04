@@ -10,9 +10,7 @@ data class Produto(
 
     fun valorComDesconto(): Double = preco * (1 - descontoPercentual / 100.0)
 
-    /** Valor do desconto em reais. */
     fun valorDesconto(): Double = preco - valorComDesconto()
 
-    /** Como um Produto isolado é "1 unidade", seu total é seu valor com desconto. */
     override fun valorTotal(): Double = valorComDesconto()
 }

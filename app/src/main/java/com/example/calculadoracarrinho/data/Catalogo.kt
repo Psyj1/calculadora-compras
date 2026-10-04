@@ -5,7 +5,6 @@ import com.example.calculadoracarrinho.model.Produto
 
 object Catalogo {
 
-    // Produtos (lista fixa)
     val notebook = Produto(
         nome = "Notebook Dell Inspiron",
         preco = 3499.00,
@@ -14,9 +13,9 @@ object Catalogo {
     )
 
     val mouse = Produto(
-        nome = "Mouse sem fio",
+        nome = "Mouse Gamer Razer Viper Ultimate Sem Fio 20.000 DPI Chroma RGB",
         preco = 89.90,
-        descricao = "Mouse óptico sem fio com receptor USB, 1600 DPI.",
+        descricao = "Mouse óptico sem fio com sensor Focus+, 20.000 DPI e bateria de até 70h.",
         descontoPercentual = 0.0
     )
 
@@ -37,7 +36,7 @@ object Catalogo {
     val headset = Produto(
         nome = "Headset Gamer",
         preco = 199.90,
-        descricao = null, // sem descrição (obrigatório)
+        descricao = null,
         descontoPercentual = 0.0
     )
 
@@ -62,7 +61,6 @@ object Catalogo {
         descontoPercentual = 0.0
     )
 
-    // Carrinho com o cenário de validação do PDF
     val carrinhoValidacao: List<ItemCarrinho> = listOf(
         ItemCarrinho(notebook, quantidade = 2),
         ItemCarrinho(mouse, quantidade = 1),
